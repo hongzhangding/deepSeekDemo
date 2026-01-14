@@ -280,7 +280,8 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
 
         // 设置默认API密钥
-        let DEEPSEEK_API_KEY = localStorage.getItem('deepseek_api_key') || '';
+		let DEFAULT_API_KEY = ''
+        let DEEPSEEK_API_KEY = localStorage.getItem('deepseek_api_key') || DEFAULT_API_KEY;
         
         // 初始化时检查并设置默认API密钥
         if (!localStorage.getItem('deepseek_api_key')) {
